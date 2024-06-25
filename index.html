@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Граф редактор</title>
+    <style>
+        #toolbar {
+            margin-bottom: 10px;
+        }
+        #canvas {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div id="toolbar">
+        <label for="shape">Фыгура:</label>
+        <select id="shape">
+            <option value="rectangle">Прямоугольник</option>
+            <option value="circle">Круг</option>
+            <option value="diamond">Ромб</option>
+            <option value="triangle">Треугольник</option>
+        </select>
+        
+        <label for="color">Цвет:</label>
+        <input type="color" id="color" value="#ff0000">
+    </div>
+    <canvas id="canvas" width="800" height="600"></canvas>
+
+    <script src="main.js"></script>
+</body>
+</html>
